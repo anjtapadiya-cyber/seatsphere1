@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeatSphere | Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f9fafb; font-family: 'Inter', sans-serif; }
+        .red-accent { color: #dc2626; }
+        .bg-red-accent { background-color: #dc2626; }
+        .border-red-accent { border-color: #dc2626; }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white border-b border-gray-200 py-4 px-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-800">SeatSphere</h1>
+        <div class="text-gray-500 text-sm flex gap-4">
+            <span>09:38</span>
+            <span>USD</span>
+            <span>EN</span>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6 md:p-12">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Checkout</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Concert Hero" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">←</button>
+                        <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">→</button>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Live Music Experience</h3>
+                                <p class="text-gray-600">Sat Aug 09 • 7:30 PM</p>
+                                <p class="text-gray-500 text-sm">Main Arena, Columbus, OH</p>
+                            </div>
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-12 h-12 rounded-lg border border-gray-200" alt="Artist">
+                        </div>
+
+                        <div class="flex gap-2 mt-4">
+                            <span class="bg-red-50 text-red-700 text-xs font-semibold px-2.5 py-1 rounded border border-red-100">🔥 High demand</span>
+                            <span class="bg-yellow-50 text-yellow-700 text-xs font-semibold px-2.5 py-1 rounded border border-yellow-100">🏆 Award winning artist</span>
+                        </div>
+
+                        <hr class="my-6 border-gray-100">
+
+                        <div class="space-y-4">
+                            <p class="font-bold text-gray-800">Section 125 • Row 13 • 1 ticket</p>
+                            <div class="flex items-center gap-2 text-sm text-gray-600">
+                                👁️ <span class="underline cursor-pointer">Clear view</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-red-600 font-medium">
+                                🔥 Popular pick - 8 people viewed this event
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="bg-red-50 border border-red-100 rounded-lg p-3 mb-6 flex gap-2 items-center">
+                        <span class="text-red-600 font-bold">⚠️</span>
+                        <p class="text-xs text-red-800 font-medium">Last tickets remaining in Row 13 in Section 125</p>
+                    </div>
+
+                    <h4 class="text-lg font-bold mb-4">Order summary</h4>
+                    <div class="flex justify-between text-gray-600 mb-2">
+                        <span>Ticket × 1</span>
+                        <span>$150</span>
+                    </div>
+                    <div class="flex justify-between font-bold text-xl border-t border-gray-100 pt-4 mt-4">
+                        <span>Total price</span>
+                        <span>$150</span>
+                    </div>
+                    <button class="text-xs text-red-600 underline mt-1">Price breakdown</button>
+
+                    <div class="mt-6">
+                        <label class="text-xs font-bold text-gray-500 uppercase">Quantity</label>
+                        <select class="w-full mt-1 border border-gray-300 rounded-lg p-2 bg-gray-50">
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+
+                    <button class="w-full bg-red-accent hover:bg-red-700 text-white font-bold py-3 rounded-lg mt-6 transition">
+                        Confirm Order
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border-l-4 border-red-accent p-6 border-y border-r border-gray-200">
+                    <h4 class="font-bold text-gray-900 mb-2">SeatSphere Safety Notice</h4>
+                    <p class="text-sm font-bold text-gray-800 mb-4">You chose a trusted marketplace - and that matters.</p>
+                    <ul class="text-xs text-gray-600 space-y-3 list-disc pl-4">
+                        <li>Don't worry, people can encounter scammers and impersonators.</li>
+                        <li>When something unexpected happens, reporting it helps protect you and other buyers.</li>
+                        <li>Our team actively monitors suspicious activity so you can focus on the event - not the hassle.</li>
+                    </ul>
+                    <div class="mt-4 flex flex-col gap-2">
+                        <button class="text-xs text-red-600 font-semibold text-left underline">Learn how SeatSphere protects buyers</button>
+                        <button class="text-xs text-red-600 font-semibold text-left underline">Report suspicious activity</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
